@@ -1,5 +1,6 @@
 import React from 'react';
-import {  View, Text } from 'react-native';
+import {  View} from 'react-native';
+import Text from './Text';
 
 const RepositoryItem =({item})=>{
 
@@ -17,13 +18,13 @@ const RepositoryItem =({item})=>{
     return (
         <View>
         
-            <Text>{fullName}</Text>
-            <Text>{description}</Text>
-            <Text>{language}</Text>
-            <Text>{forksCount}</Text>
-            <Text>{stargazersCount}</Text>
-            <Text>{ratingAverage}</Text>
-            <Text>{reviewCount}</Text>
+            <Text fontWeight="bold">{fullName}</Text>
+            <Text color="textSecondary">{description}</Text>
+            <Text color="textSecondary">{language}</Text>
+            <Text color="textSecondary">{forksCount}</Text>
+            <Text color="textSecondary">{stargazersCount}</Text>
+            <Text color="textSecondary" >{ratingAverage}</Text>
+            <Text color="textSecondary">{reviewCount}</Text>
             <Text>{ownerAvatarUrl}</Text>
         </View>
     );
